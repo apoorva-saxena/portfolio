@@ -1,9 +1,6 @@
-import React, {Component} from 'react'
-import logo from './images/logo.png'
-import './App.css'
-import {Row} from 'react-bootstrap/lib/Row'
-import {Col} from 'react-bootstrap/lib/Col'
-import {Grid} from 'react-bootstrap/lib/Grid'
+import React, {Component} from 'react';
+import {BrowserRouter as Router, Route, NavLink, Link, Switch} from 'react-router-dom'
+import Home from './components/Home'
 
 class App extends Component {
   render() {
@@ -17,9 +14,9 @@ class App extends Component {
         <Router>
           <Switch>
             <Route exact path="/" component={Home}/>
-            <Route exact path="/questions" component={Question}/>
+            {/* <Route exact path="/questions" component={Question}/>
             <Route exact path="/sign-in" component={SignIn}/>
-            <Route exact path="/sign-up" component={SignUp}/>
+            <Route exact path="/sign-up" component={SignUp}/> */}
             {/* <Route path="/:name" component={Category}/> */}
           </Switch>
         </Router>
