@@ -84,7 +84,7 @@ class Home extends Component {
               padding: 0;
             }
             .stuff {
-              padding: 160px 48px 0 48px;              
+              padding: 160px 48px 10px 48px;              
             }
 
             .books-img {
@@ -96,7 +96,7 @@ class Home extends Component {
             }
 
             .stuff-container {
-              padding: 29px 20px 0 20px;
+              padding: 29px 20px 11px 20px;
               border-bottom: 2px black solid;
               border-left: 2px black solid;
               border-right: 2px black solid;
@@ -108,7 +108,7 @@ class Home extends Component {
               border-top: 2px black solid;
               border-right: 2px black solid;
               border-left: 2px black solid;
-              padding: 266px 20px 0 20px;
+              padding: 266px 20px 16px 20px;
               background-color: #D58EAE;
               
               
@@ -118,7 +118,7 @@ class Home extends Component {
               border-bottom: 2px black solid;
               border-left: 2px black solid;
               border-right: 2px black solid;
-              padding: 110px 48px 0 48px;
+              padding: 110px 48px 11px 48px;
               background-color: #D58EAE;
               
               
@@ -142,7 +142,7 @@ class Home extends Component {
 
             .cv-container {
               border-top: 2px solid black;
-              padding-top: 121px;
+              padding: 121px 0 16px 0;
               background-color: #D58EAE;
               
             }
@@ -151,7 +151,7 @@ class Home extends Component {
               border-right: 2px solid black;
               border-top: 2px solid black;
               border-bottom: 2px solid black;
-              padding-top: 135px;
+              padding: 135px 0 11px 0;
               background-color: #D58EAE;
               
             }
@@ -160,13 +160,13 @@ class Home extends Component {
               border-top: 2px solid black;
               border-left: 2px solid black;
               border-bottom: 2px solid black;
-              padding-top: 172px;
+              padding: 172px 0 16px 0;
               background-color: #D58EAE;
             }
 
             .work-container {
               border-bottom: 2px solid black;
-              padding-top: 141px;
+              padding: 141px 0 11px 0;
               background-color: #D58EAE;
               
             }
