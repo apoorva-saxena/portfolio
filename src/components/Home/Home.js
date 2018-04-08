@@ -18,32 +18,32 @@ class Home extends Component {
       <div>
         <Header/>
         <div>
-        <Grid>
-          <Row className="show-grid">
-                <Col sm={6} md={3}>
+        <Grid className="grid">
+          <Row className="show-grid" className="row">
+                <Col sm={6} md={3} className="col">
                 <div className="top-img-container"></div>
                 </Col>
-                <Col sm={6} md={3}>
-                <div className="stuff"><img src={CV} className="cv" alt="CV"/></div>
+                <Col sm={6} md={3} className="col">
+                <div className="cv-container"><img src={CV} className="cv" alt="CV"/></div>
                 </Col>
-                <Col sm={6} md={3}>
-                <div className="stuff"><img src={linkedin} className="linkedin" alt="linkedin"/></div>
+                <Col sm={6} md={3} className="col">
+                <div className="linkedin-container"><img src={linkedin} className="linkedin" alt="linkedin"/></div>
                 </Col>
-                <Col sm={6} md={3}>
+                <Col sm={6} md={3} className="col">
                 <div className="top-img-container"></div>
                 </Col>
             </Row>
-            <Row className="show-grid">
-                <Col sm={6} md={3}>
+            <Row className="show-grid" className="row">
+                <Col sm={6} md={3} className="col">
                 <div className="book-container"><img src={books} className="books-img" alt="books"/></div>
                 </Col>
-                <Col sm={6} md={3}>
-                <div className="stuff"><img src={github} className="github" alt="github"/></div>
+                <Col sm={6} md={3} className="col">
+                <div className="github-container"><img src={github} className="github" alt="github"/></div>
                 </Col>
-                <Col sm={6} md={3}>
-                <div className="stuff"><img src={work} className="work" alt="work"/></div>
+                <Col sm={6} md={3} className="col">
+                <div className="work-container"><img src={work} className="work" alt="work"/></div>
                 </Col>
-                <Col sm={6} md={3}>
+                <Col sm={6} md={3} className="col">
                 <div className="stuff-container"><img src={stuff} className="stuff-img" alt="stuff"/></div>
                 </Col>
             </Row>
@@ -53,13 +53,29 @@ class Home extends Component {
         <style jsx>
           {
             ` 
+            .grid {
+              box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+              padding: 0;
+            }
+
+            .grid:hover {
+              box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.25)
+            }
+
+            .row {
+              padding: 0;
+              margin: 0;
+            }
+
+            .col {
+              padding: 0;
+            }
             .stuff {
-              border: 1px black solid;
               padding: 160px 48px 0 48px;              
             }
 
             .books-img {
-              width: 100px;
+              width: 150px;
             }
 
             .stuff-img {
@@ -67,22 +83,32 @@ class Home extends Component {
             }
 
             .stuff-container {
-              padding: 52px 20px 0 20px;
-              border: 1px black solid;
-              border-top: 1px transparent solid;
+              padding: 53px 20px 0 20px;
+              border-bottom: 2px black solid;
+              border-left: 2px black solid;
+              border-right: 2px black solid;
+              background-color: #D58EAE;
               
             }
 
             .top-img-container {
-              border: 1px black solid;
-              border-bottom: 1px transparent solid;
-              padding: 264px 20px 0 20px;
+              border-top: 2px black solid;
+              border-right: 2px black solid;
+              border-left: 2px black solid;
+              padding: 266px 20px 0 20px;
+              background-color: #D58EAE;
+              
+              
             }
 
             .book-container {
-              border: 1px black solid;
-              border-top: 1px transparent solid;
-              padding: 160px 48px 0 48px;
+              border-bottom: 2px black solid;
+              border-left: 2px black solid;
+              border-right: 2px black solid;
+              padding: 110px 48px 0 48px;
+              background-color: #D58EAE;
+              
+              
             }
 
             .cv {
@@ -90,7 +116,7 @@ class Home extends Component {
             }
 
             .linkedin {
-              width: 300px;
+              width: 240px;
             }
 
             .github {
@@ -99,6 +125,37 @@ class Home extends Component {
 
             .work {
               width: 220px
+            }
+
+            .cv-container {
+              border-top: 2px solid black;
+              padding-top: 121px;
+              background-color: #D58EAE;
+              
+            }
+            
+            .github-container {
+              border-right: 2px solid black;
+              border-top: 2px solid black;
+              border-bottom: 2px solid black;
+              padding-top: 135px;
+              background-color: #D58EAE;
+              
+            }
+
+            .linkedin-container {
+              border-top: 2px solid black;
+              border-left: 2px solid black;
+              border-bottom: 2px solid black;
+              padding-top: 172px;
+              background-color: #D58EAE;
+            }
+
+            .work-container {
+              border-bottom: 2px solid black;
+              padding-top: 141px;
+              background-color: #D58EAE;
+              
             }
 
             .
