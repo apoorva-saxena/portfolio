@@ -24,10 +24,10 @@ class Home extends Component {
                 <div className="top-img-container"></div>
                 </Col>
                 <Col sm={6} md={3} className="col">
-                <div className="cv-container image-hover"><figure><img src={CV} className="cv" alt="CV"/></figure></div>
+                <div className="cv-container image-hover"><figure><a href="https://github.com/apoorva-saxena/CV"><img src={CV} className="cv" alt="CV"/></a></figure></div>
                 </Col>
                 <Col sm={6} md={3} className="col">
-                <div className="linkedin-container image-hover"><figure><img src={linkedin} className="linkedin" alt="linkedin"/></figure></div>
+                <div className="linkedin-container image-hover"><figure><a href="https://www.linkedin.com/in/apoorva-saxena-59007382"><img src={linkedin} className="linkedin" alt="linkedin"/></a></figure></div>
                 </Col>
                 <Col sm={6} md={3} className="col">
                 <div className="top-img-container"></div>
@@ -38,10 +38,10 @@ class Home extends Component {
                 <div className="book-container image-hover"><figure><img src={books} className="books-img" alt="books"/></figure></div>
                 </Col>
                 <Col sm={6} md={3} className="col">
-                <div className="github-container image-hover"><figure><img src={github} className="github" alt="github"/></figure></div>
+                <div className="github-container image-hover"><figure><a href="https://github.com/apoorva-saxena"><img src={github} className="github" alt="github"/></a></figure></div>
                 </Col>
                 <Col sm={6} md={3} className="col">
-                <div className="work-container image-hover"><figure><img src={work} className="work" alt="work"/></figure></div>
+                <div className="work-container image-hover"><figure><a href="https://github.com/apoorva-saxena"><img src={work} className="work" alt="work"/></a></figure></div>
                 </Col>
                 <Col sm={6} md={3} className="col">
                 <div className="stuff-container image-hover"><figure><img src={stuff} className="stuff-img" alt="stuff"/></figure></div>
@@ -59,10 +59,13 @@ class Home extends Component {
               -webkit-transition: .3s ease-in-out;
               transition: .3s ease-in-out;
             }
+
             .image-hover figure:hover img {
               -webkit-transform: rotate(15deg) scale(1);
-              transform: rotate(15deg) scale(1);
+              transform: rotate(10deg) scale(1);
+              z-index: -1;
             }
+
             .grid {
               box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
               padding: 0;
@@ -89,11 +92,11 @@ class Home extends Component {
             }
 
             .stuff-img {
-              height:210px;
+              height:234px;
             }
 
             .stuff-container {
-              padding: 53px 20px 0 20px;
+              padding: 29px 20px 0 20px;
               border-bottom: 2px black solid;
               border-left: 2px black solid;
               border-right: 2px black solid;
