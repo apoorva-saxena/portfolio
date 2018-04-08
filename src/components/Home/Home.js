@@ -24,10 +24,10 @@ class Home extends Component {
                 <div className="top-img-container"></div>
                 </Col>
                 <Col sm={6} md={3} className="col">
-                <div className="cv-container"><img src={CV} className="cv" alt="CV"/></div>
+                <div className="cv-container image-hover"><figure><img src={CV} className="cv" alt="CV"/></figure></div>
                 </Col>
                 <Col sm={6} md={3} className="col">
-                <div className="linkedin-container"><img src={linkedin} className="linkedin" alt="linkedin"/></div>
+                <div className="linkedin-container image-hover"><figure><img src={linkedin} className="linkedin" alt="linkedin"/></figure></div>
                 </Col>
                 <Col sm={6} md={3} className="col">
                 <div className="top-img-container"></div>
@@ -35,16 +35,16 @@ class Home extends Component {
             </Row>
             <Row className="show-grid" className="row">
                 <Col sm={6} md={3} className="col">
-                <div className="book-container"><img src={books} className="books-img" alt="books"/></div>
+                <div className="book-container image-hover"><figure><img src={books} className="books-img" alt="books"/></figure></div>
                 </Col>
                 <Col sm={6} md={3} className="col">
-                <div className="github-container"><img src={github} className="github" alt="github"/></div>
+                <div className="github-container image-hover"><figure><img src={github} className="github" alt="github"/></figure></div>
                 </Col>
                 <Col sm={6} md={3} className="col">
-                <div className="work-container"><img src={work} className="work" alt="work"/></div>
+                <div className="work-container image-hover"><figure><img src={work} className="work" alt="work"/></figure></div>
                 </Col>
                 <Col sm={6} md={3} className="col">
-                <div className="stuff-container"><img src={stuff} className="stuff-img" alt="stuff"/></div>
+                <div className="stuff-container image-hover"><figure><img src={stuff} className="stuff-img" alt="stuff"/></figure></div>
                 </Col>
             </Row>
         </Grid>
@@ -53,6 +53,16 @@ class Home extends Component {
         <style jsx>
           {
             ` 
+            .image-hover figure img {
+              -webkit-transform: rotate(0) scale(1);
+              transform: rotate(0) scale(1);
+              -webkit-transition: .3s ease-in-out;
+              transition: .3s ease-in-out;
+            }
+            .image-hover figure:hover img {
+              -webkit-transform: rotate(15deg) scale(1);
+              transform: rotate(15deg) scale(1);
+            }
             .grid {
               box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
               padding: 0;

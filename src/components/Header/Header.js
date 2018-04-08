@@ -7,7 +7,8 @@ class Header extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo"/>
+          <div><img src={logo} className="App-logo" alt="logo"/></div>
+          <div className="intro">Hi, I am Apoorva</div>
         </header>
         <style jsx>
           {
@@ -28,6 +29,12 @@ class Header extends Component {
 
             .App {
               text-align: center;
+              padding-bottom: 40px;
+            }
+
+            .intro {
+              font-size: 1.5em;
+              padding-top: 28px;
             }
             `
           }
