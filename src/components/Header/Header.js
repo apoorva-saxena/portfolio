@@ -9,6 +9,7 @@ class Header extends Component {
         <header className="App-header">
           <div><img src={logo} className="App-logo" alt="logo"/></div>
           <div className="intro">Hi, I am Apoorva</div>
+          <div>I am a full stack developer in node js, express, react and angular</div>
         </header>
         <style jsx>
           {
@@ -29,13 +30,14 @@ class Header extends Component {
 
             .App {
               text-align: center;
-              padding-bottom: 40px;
+              padding-bottom: 60px;
             }
 
             .intro {
               font-size: 1.5em;
               padding-top: 28px;
             }
+
             `
           }
 </style>
