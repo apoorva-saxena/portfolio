@@ -9,7 +9,7 @@ class Header extends Component {
         <header className="App-header">
           <div><img src={logo} className="App-logo" alt="logo"/></div>
           <div className="intro">Hi, I am Apoorva</div>
-          <div>I am a full stack developer in node js, express, react and angular. I am a full time developer who loves reading books and have interest in robotics.</div>
+          <div>I am a full stack developer in node js, express, react and angular. I love reading books and have interest in robotics.</div>
         </header>
         <style jsx>
           {
