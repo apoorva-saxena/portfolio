@@ -88,7 +88,7 @@ class Home extends Component {
             }
 
             .books-img {
-              width: 150px;
+              width: 140px;
             }
 
             .stuff-img {
@@ -118,7 +118,7 @@ class Home extends Component {
               border-bottom: 2px black solid;
               border-left: 2px black solid;
               border-right: 2px black solid;
-              padding: 110px 48px 11px 48px;
+              padding: 12px 48px 11px 48px;
               background-color: #D58EAE;
               
               
