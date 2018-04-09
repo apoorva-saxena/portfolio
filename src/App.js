@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
 import {BrowserRouter as Router, Route, NavLink, Link, Switch} from 'react-router-dom'
 import Home from './components/Home'
+import ContactMe from './components/ContactMe'
 
 class App extends Component {
   render() {
@@ -14,6 +15,7 @@ class App extends Component {
         <Router>
           <Switch>
             <Route exact path="/" component={Home}/>
+            <Route exact path="/contact-me" component={ContactMe}/>
             {/* <Route exact path="/questions" component={Question}/>
             <Route exact path="/sign-in" component={SignIn}/>
             <Route exact path="/sign-up" component={SignUp}/> */}

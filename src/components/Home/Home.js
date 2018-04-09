@@ -166,7 +166,7 @@ class Home extends Component {
 
             .work-container {
               border-bottom: 2px solid black;
-              padding: 148px 0 16px 0;
+              padding: 134px 0 16px 0;
               background-color: #D58EAE;
               
             }
