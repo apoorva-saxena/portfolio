@@ -20,7 +20,7 @@ class Home extends Component {
         <div>
         <Grid className="grid">
           <Row className="show-grid" className="row">
-                <Col sm={6} md={3} className="col">
+                <Col sm={6} md={3} xsHidden smHidden className="col">
                 <div className="top-img-container"></div>
                 </Col>
                 <Col sm={6} md={3} className="col">
@@ -29,12 +29,12 @@ class Home extends Component {
                 <Col sm={6} md={3} className="col">
                 <div className="linkedin-container image-hover"><figure><a href="https://www.linkedin.com/in/apoorva-saxena-59007382"><img src={linkedin} className="linkedin" alt="linkedin"/></a></figure></div>
                 </Col>
-                <Col sm={6} md={3} className="col">
+                <Col sm={6} md={3} xsHidden smHidden className="col">
                 <div className="top-img-container"></div>
                 </Col>
             </Row>
             <Row className="show-grid" className="row">
-                <Col sm={6} md={3} className="col">
+                <Col sm={6} md={3} xsHidden smHidden className="col">
                 <div className="book-container image-hover"><figure><img src={books} className="books-img" alt="books"/></figure></div>
                 </Col>
                 <Col sm={6} md={3} className="col">
@@ -43,7 +43,7 @@ class Home extends Component {
                 <Col sm={6} md={3} className="col">
                 <div className="work-container image-hover"><figure><a href="mailto:apoorvasaxena.dev@gmail.com?Subject=Lets%20discuss%20technology" target="_top"><img src={work} className="work" alt="work"/></a></figure></div>
                 </Col>
-                <Col sm={6} md={3} className="col">
+                <Col sm={6} md={3} xsHidden smHidden className="col">
                 <div className="stuff-container image-hover"><figure><img src={stuff} className="stuff-img" alt="stuff"/></figure></div>
                 </Col>
             </Row>
