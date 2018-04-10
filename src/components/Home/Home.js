@@ -171,7 +171,6 @@ class Home extends Component {
               
             }
 
-            .
             `
           }
 </style>
