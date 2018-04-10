@@ -4,6 +4,7 @@ import Grid from 'react-bootstrap/lib/Grid'
 import Row from 'react-bootstrap/lib/Row'
 import Col from 'react-bootstrap/lib/Col'
 import work from '../../images/work3.png'
+import ContactMeForm from '../ContactMeForm';
 
 class ContactMe extends Component {
   render() {
@@ -12,15 +13,15 @@ class ContactMe extends Component {
         <CommonHeader/>
         <Grid>
           <Row className="show-grid">
-            <Col md={6}>
+            <Col md={7}>
               <div className="form-header">
                 <div><img src={work} className="work-img" alt="work"/></div> 
               </div>
               <div className="form-elements-container">
-                Form elements
+                <ContactMeForm/>
               </div>
             </Col>
-            <Col md={6}>
+            <Col md={5}>
             </Col>
           </Row>
         </Grid>
