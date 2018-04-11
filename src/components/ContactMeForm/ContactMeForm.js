@@ -13,7 +13,8 @@ constructor(props, context) {
     .bind(this);
 
   this.state = {
-    value: ''
+    email: '',
+    name: ''
   };
 }
 
@@ -38,6 +39,7 @@ handleChange(e) {
         <FormGroup
           controlId="formBasicText"
           validationState={this.getValidationState()}
+          className = "input"
         >
           <ControlLabel>Name</ControlLabel>
           <FormControl
@@ -48,7 +50,30 @@ handleChange(e) {
           />
           {/* <FormControl.Feedback /> */}
         </FormGroup>
+        <FormGroup
+          controlId="formBasicText"
+          validationState={this.getValidationState()}
+          className = "input"
+        >
+          <ControlLabel>Email</ControlLabel>
+          <FormControl
+            type="text"
+            value={this.state.value}
+            placeholder="Enter name"
+            onChange={this.handleChange}
+          />
+          {/* <FormControl.Feedback /> */}
+        </FormGroup>
       </form>
+      <style jsx>
+          {
+            `
+            .input {
+              padding: 48px;
+            }
+            `
+          }
+        </style>
       </div>
     )
   }
