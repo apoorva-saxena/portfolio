@@ -25,7 +25,7 @@ class ContactMe extends Component {
         <CommonHeader/>
         <Grid>
           <Row className="show-grid">
-            <Col md={7}>
+            <Col md={6}>
             <div className="contactme-container">
               <div className="form-header">
                 <div><img src={work} className="work-img" alt="work"/>
@@ -45,7 +45,7 @@ class ContactMe extends Component {
               </div>
               </div>
             </Col>
-            <Col md={5}>
+            <Col md={6}>
             </Col>
           </Row>
         </Grid>
@@ -80,7 +80,7 @@ class ContactMe extends Component {
               border-left: black 2px solid;
               border-right: black 2px solid;
               border-bottom: black 2px solid;
-              
+              margin-bottom: 80px;
             }
 
             .msgnotsent {
