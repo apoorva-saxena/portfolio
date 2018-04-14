@@ -88,7 +88,7 @@ class ContactMeForm extends Component {
             }
 
             textarea {
-              color: ${colors.bgPrimary};
+              color: ${colors.bglogo};
               padding: 10px;
               width: 100%;
               border: 2px solid black;
