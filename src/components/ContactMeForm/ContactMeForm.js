@@ -11,7 +11,8 @@ class ContactMeForm extends Component {
       message: ''
     },
     active: null,
-    error: {}
+    error: {},
+    sent: this.props.sent
   }
 
   handleFocus = ({target}) => {
@@ -30,19 +31,17 @@ class ContactMeForm extends Component {
     }))
   }
 
-  handleSubmit = ({target}) => {
-    console.log("===========")
-    console.log(target)
+  handleSubmit = (event) => {
+    event.preventDefault()
+    console.log("=================1")
     console.log(this.state.formData)
-    //sendmail
-    
   }
 
 
   render() {
     return (
       <div>
-      <form method="POST" action="https://formspree.io/apsaxena24@gmail.com">
+      <form onSubmit={this.handleSubmit}>
         <div className="pseudo-table ">
             <input id="name" type="text" name="name" value={this.state.formData.name} onChange={this.handleInputChange}/>
             <label for="name">Name</label>
@@ -51,8 +50,8 @@ class ContactMeForm extends Component {
             <input id="email" type="email" name="email" value={this.state.formData.email} onChange={this.handleInputChange}/>
             <label for="email">Email</label>
         </div>
-        <div className="pseudo-table "><textarea rows="4" cols="50" name="message" placeholder="Your message" value={this.state.formData.message} onChange={this.handleInputChange}/></div>
-        <div className="pseudo-table "><button class="button" onClick={this.handleSubmit}>Submit</button></div>
+        <div className="pseudo-table "><textarea rows="4" cols="50" name="message" placeholder="Your message..." value={this.state.formData.message} onChange={this.handleInputChange}/></div>
+        <div className="pseudo-table "><button onClick={(e) => { this.props.onSubmit(e); this.handleSubmit(e); }}>Submit</button></div>
       </form> 
     <style jsx> {
       ` 
@@ -68,6 +67,7 @@ class ContactMeForm extends Component {
             label { 
               color: black;
               left: 48px; 
+              font-size: 20px;
             }
 
             input { 
@@ -75,6 +75,7 @@ class ContactMeForm extends Component {
               border-bottom : 2px solid black;
               width: 100%;
               color: #D58EAE; 
+              font-size: 20px;
             }
 
             input:focus + label { 
@@ -92,6 +93,7 @@ class ContactMeForm extends Component {
               width: 100%;
               border: 2px solid black;
               font-size: bold;
+              font-size:20px;
             }
 
             button {
@@ -139,17 +141,3 @@ class ContactMeForm extends Component {
 }
 
 export default ContactMeForm
-
-{/* <TextField
-            name="email"
-            labelName="Your email"
-            isActive={this.state.active === "Your email"}
-            onFocus={this.handleFocus}
-            value={this.state.email}
-            onChange={this.handleInputChange}/>
-          <div className="button-container">
-            <Button onClick={this.handleSubmit} className="btn">
-              Submit
-            </Button>
-      </div> */
-}
