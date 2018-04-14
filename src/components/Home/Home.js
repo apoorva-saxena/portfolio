@@ -41,7 +41,7 @@ class Home extends Component {
                 <div className="github-container image-hover"><figure><a href="https://github.com/apoorva-saxena"><img src={github} className="github" alt="github"/></a></figure></div>
                 </Col>
                 <Col sm={6} md={3} className="col">
-                <div className="work-container image-hover"><figure><a href="mailto:apoorvasaxena.dev@gmail.com?Subject=Lets%20discuss%20technology" target="_top"><img src={work} className="work" alt="work"/></a></figure></div>
+                <div className="work-container image-hover"><figure><a href="/contact-me"><img src={work} className="work" alt="work"/></a></figure></div>
                 </Col>
                 <Col sm={6} md={3} xsHidden smHidden className="col">
                 <div className="stuff-container image-hover"><figure><img src={stuff} className="stuff-img" alt="stuff"/></figure></div>
