@@ -112,7 +112,7 @@ class Home extends Component {
             }
 
             .stuff-container {
-              padding: 29px 14px 11px;
+              padding: 30px 14px 11px;
               border-bottom: 2px black solid;
               border-left: 2px black solid;
               border-right: 2px black solid;
@@ -124,7 +124,7 @@ class Home extends Component {
               border-top: 2px black solid;
               border-right: 2px black solid;
               border-left: 2px black solid;
-              padding: 266px 20px 16px;
+              padding: 267px 20px 16px;
               background-color: ${colors.bgPrimary};
 
             }
@@ -156,7 +156,7 @@ class Home extends Component {
 
             .cv-container {
               border-top: 2px solid black;
-              padding: 121px 0 16px;
+              padding: 122px 0 16px;
               background-color: ${colors.bgPrimary};
 
             }
