@@ -111,7 +111,7 @@ class Home extends Component {
             }
 
             .stuff-container {
-              padding: 29px 20px 11px;
+              padding: 29px 14px 11px;
               border-bottom: 2px black solid;
               border-left: 2px black solid;
               border-right: 2px black solid;
