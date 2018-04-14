@@ -9,6 +9,7 @@ import github from '../../images/github.png'
 import linkedin from '../../images/linkedin.png'
 import work from '../../images/work.png'
 import CV from '../../images/CV.png'
+import { colors } from '../../lib/variables'
 
 class Home extends Component {
   render() {
@@ -115,7 +116,7 @@ class Home extends Component {
               border-bottom: 2px black solid;
               border-left: 2px black solid;
               border-right: 2px black solid;
-              background-color: #D58EAE;
+              background-color: ${colors.bgPrimary};
 
             }
 
@@ -124,7 +125,7 @@ class Home extends Component {
               border-right: 2px black solid;
               border-left: 2px black solid;
               padding: 266px 20px 16px;
-              background-color: #D58EAE;
+              background-color: ${colors.bgPrimary};
 
             }
 
@@ -133,7 +134,7 @@ class Home extends Component {
               border-left: 2px black solid;
               border-right: 2px black solid;
               padding: 12px 48px 11px;
-              background-color: #D58EAE;
+              background-color: ${colors.bgPrimary};
 
             }
 
@@ -156,7 +157,7 @@ class Home extends Component {
             .cv-container {
               border-top: 2px solid black;
               padding: 121px 0 16px;
-              background-color: #D58EAE;
+              background-color: ${colors.bgPrimary};
 
             }
 
@@ -165,7 +166,7 @@ class Home extends Component {
               border-top: 2px solid black;
               border-bottom: 2px solid black;
               padding: 135px 0 11px;
-              background-color: #D58EAE;
+              background-color: ${colors.bgPrimary};
 
             }
 
@@ -174,13 +175,13 @@ class Home extends Component {
               border-left: 2px solid black;
               border-bottom: 2px solid black;
               padding: 172px 0 16px;
-              background-color: #D58EAE;
+              background-color: ${colors.bgPrimary};
             }
 
             .work-container {
               border-bottom: 2px solid black;
               padding: 134px 0 16px;
-              background-color: #D58EAE;
+              background-color: ${colors.bgPrimary};
 
             }
              `

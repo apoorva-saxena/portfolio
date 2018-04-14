@@ -2,6 +2,7 @@ import React, {Component} from 'react'
 import FormGroup from 'react-bootstrap/lib/FormGroup'
 import ControlLabel from 'react-bootstrap/lib/ControlLabel'
 import FormControl from 'react-bootstrap/lib/FormControl'
+import {colors} from '../../lib/variables'
 
 class ContactMeForm extends Component {
   state = {
@@ -73,21 +74,21 @@ class ContactMeForm extends Component {
               border: none;
               border-bottom : 2px solid black;
               width: 100%;
-              color: #D58EAE; 
+              color: ${colors.bgPrimary}; 
               font-size: 20px;
             }
 
             input:focus + label { 
-              color: #D58EAE; 
+              color: ${colors.bgPrimary}; 
               font-weight: bold;
             }
 
             input:focus {
-              border-bottom : 2px solid #D58EAE;
+              border-bottom : 2px solid ${colors.bgPrimary};
             }
 
             textarea {
-              color: #D58EAE;
+              color: ${colors.bgPrimary};
               padding: 10px;
               width: 100%;
               border: 2px solid black;
@@ -98,7 +99,7 @@ class ContactMeForm extends Component {
             button {
               width: 100%;
               padding: 16px 0;
-              background-color: #D58EAE;
+              background-color: ${colors.bgPrimary};
               color: black;
               font-weight: bold;
               border: black 2px solid;
@@ -109,25 +110,25 @@ class ContactMeForm extends Component {
             }
 
             textarea::-webkit-input-placeholder {
-              color: #D58EAE;
+              color: ${colors.bgPrimary};
               opacity: 0.8;
               font-weight: bold;
             }
 
             textarea:-moz-placeholder { /* Firefox 18- */
-              color: #D58EAE; 
+              color: ${colors.bgPrimary}; 
               opacity: 0.8; 
               font-weight: bold;
             }
 
             textarea::-moz-placeholder {  /* Firefox 19+ */
-              color: #D58EAE;  
+              color: ${colors.bgPrimary};  
               opacity: 0.8;
               font-weight: bold;
             }
 
             textarea:-ms-input-placeholder {
-              color: #D58EAE;  
+              color: ${colors.bgPrimary};  
               opacity: 0.8;
               font-weight: bold;
             }

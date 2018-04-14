@@ -1,5 +1,6 @@
 import React, {Component} from 'react'
 import logo from '../../images/logo.png'
+import {colors} from '../../lib/variables'
 
 class Header extends Component {
   render () {
@@ -17,7 +18,7 @@ class Header extends Component {
             .App-header {
               padding: 20px;
               color: black;
-              background-color: #D58EAE; 
+              background-color: ${colors.bgPrimary}; 
             }
             `
           }
