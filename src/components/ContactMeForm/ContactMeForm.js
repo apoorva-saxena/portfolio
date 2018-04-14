@@ -74,7 +74,7 @@ class ContactMeForm extends Component {
               border: none;
               border-bottom : 2px solid black;
               width: 100%;
-              color: ${colors.bgPrimary}; 
+              color: ${colors.bglogo}; 
               font-size: 20px;
             }
 

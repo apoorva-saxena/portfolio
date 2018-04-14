@@ -4,6 +4,7 @@ import Grid from 'react-bootstrap/lib/Grid'
 import Row from 'react-bootstrap/lib/Row'
 import Col from 'react-bootstrap/lib/Col'
 import work from '../../images/work3.png'
+import gtech from '../../images/gtech.png'
 import ContactMeForm from '../ContactMeForm';
 import msgsent from '../../images/msgsent.png'
 import msgnotsent from '../../images/msgnotsent.png'
@@ -46,12 +47,23 @@ class ContactMe extends Component {
               </div>
             </Col>
             <Col md={6}>
+              <div className="tech-box">
+                <img src={gtech} className="gtech" alt="gtech"/>
+              </div>
             </Col>
           </Row>
         </Grid>
         <style jsx>
           {
             `
+            .tech-box {
+              position: relative;
+              padding: 200px 72px;
+            }
+
+            .gtech:hover {
+              opacity: 0.8;
+            }
             .contactme-container {
               box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
             }
