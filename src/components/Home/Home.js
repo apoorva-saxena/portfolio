@@ -133,7 +133,7 @@ class Home extends Component {
               border-bottom: 2px black solid;
               border-left: 2px black solid;
               border-right: 2px black solid;
-              padding: 12px 48px 11px;
+              padding: 13px 48px 11px;
               background-color: ${colors.bgPrimary};
 
             }
@@ -165,7 +165,7 @@ class Home extends Component {
               border-right: 2px solid black;
               border-top: 2px solid black;
               border-bottom: 2px solid black;
-              padding: 135px 0 11px;
+              padding: 136px 0 11px;
               background-color: ${colors.bgPrimary};
 
             }
@@ -174,13 +174,13 @@ class Home extends Component {
               border-top: 2px solid black;
               border-left: 2px solid black;
               border-bottom: 2px solid black;
-              padding: 172px 0 16px;
+              padding: 173px 0 16px;
               background-color: ${colors.bgPrimary};
             }
 
             .work-container {
               border-bottom: 2px solid black;
-              padding: 134px 0 16px;
+              padding: 135px 0 16px;
               background-color: ${colors.bgPrimary};
 
             }
