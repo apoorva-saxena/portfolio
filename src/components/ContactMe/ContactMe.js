@@ -26,6 +26,7 @@ class ContactMe extends Component {
         <Grid>
           <Row className="show-grid">
             <Col md={7}>
+            <div className="contactme-container">
               <div className="form-header">
                 <div><img src={work} className="work-img" alt="work"/>
                   {this.state.sent ? 
@@ -42,6 +43,7 @@ class ContactMe extends Component {
               <div className="form-elements-container">
                 <ContactMeForm sent={this.state.sent} onSubmit={this.handleMsgSentStatus}/>
               </div>
+              </div>
             </Col>
             <Col md={5}>
             </Col>
@@ -50,6 +52,15 @@ class ContactMe extends Component {
         <style jsx>
           {
             `
+            .contactme-container {
+              box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            }
+
+            .contactme-container:hover {
+              box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.5), 0 6px 20px 0 rgba(0, 0, 0, 0.25);
+              
+            }
+
             .show-grid {
               padding-left: -15px;
             }

@@ -33,7 +33,6 @@ class ContactMeForm extends Component {
 
   handleSubmit = (event) => {
     event.preventDefault()
-    console.log("=================1")
     console.log(this.state.formData)
   }
 
