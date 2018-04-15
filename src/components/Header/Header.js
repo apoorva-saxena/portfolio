@@ -102,14 +102,15 @@ class Header extends Component {
             
             .count {
               float: right;
-              margin-top: -20px;
-              padding-right: 20px;
+              margin-top: -195px;
+              padding-right: 16px;
             }
 
-            @media only screen and (max-width: 600px) {
+            @media only screen and (max-width: 700px) {
               .count {
-                margin-top: -40px;
-                margin-right: 119px
+                padding-top: 20px;
+                float: none;
+                margin-top: -20px
               }
             }
 
