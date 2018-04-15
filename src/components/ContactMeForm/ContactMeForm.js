@@ -16,6 +16,7 @@ class ContactMeForm extends Component {
     sent: this.props.sent
   }
 
+
   handleFocus = ({target}) => {
     const name = target.name
     this.setState({active: name})
@@ -34,7 +35,6 @@ class ContactMeForm extends Component {
 
   handleSubmit = async (event) => {
     event.preventDefault()
-    console.log(this.state.formData)
     // await fetch('https://portfolio-apoorva.herokuapp.com/sendmail', {
     await fetch('https://portfolio-apoorva.herokuapp.com/sendmail', {
       
@@ -49,19 +49,21 @@ class ContactMeForm extends Component {
 
 
   render() {
+  const isEnabled = this.state.formData.email.length > 0 && this.state.formData.name.length > 0 && this.state.formData.message.length > 0
+    console.log(isEnabled)
     return (
       <div>
       <form onSubmit={this.handleSubmit}>
         <div className="pseudo-table ">
-            <input id="name" type="text" name="name" value={this.state.formData.name} onChange={this.handleInputChange}/>
+            <input id="name" type="text" name="name" value={this.state.formData.name} onChange={this.handleInputChange} required/>
             <label for="name">Name</label>
         </div>
         <div className="pseudo-table ">
-            <input id="email" type="email" name="email" value={this.state.formData.email} onChange={this.handleInputChange}/>
+            <input id="email" type="email" name="email" value={this.state.formData.email} onChange={this.handleInputChange} required/>
             <label for="email">Email</label>
         </div>
-        <div className="pseudo-table "><textarea rows="4" cols="50" name="message" placeholder="Your message..." value={this.state.formData.message} onChange={this.handleInputChange}/></div>
-        <div className="pseudo-table "><button onClick={(e) => { this.props.onSubmit(e); this.handleSubmit(e); }}>Submit</button></div>
+        <div className="pseudo-table "><textarea rows="4" cols="50" name="message" placeholder="Your message..." value={this.state.formData.message} onChange={this.handleInputChange} required/></div>
+        <div className="pseudo-table "><button disabled={!isEnabled} onClick={(e) => { this.props.onSubmit(e); this.handleSubmit(e); }}>Submit</button></div>
       </form> 
     <style jsx> {
       ` 
@@ -111,10 +113,15 @@ class ContactMeForm extends Component {
             button {
               width: 100%;
               padding: 16px 0;
-              background-color: ${colors.bgPrimary};
+              background-color: ${colors.bglogo};
               color: black;
               font-weight: bold;
               border: black 2px solid;
+            }
+
+            button:disabled,
+            button[disabled]{
+              background-color: ${colors.bgPrimary};
             }
 
             button:hover {
