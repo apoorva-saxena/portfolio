@@ -46,7 +46,7 @@ class ContactMe extends Component {
               </div>
               </div>
             </Col>
-            <Col md={6}>
+            <Col md={6} xsHidden smHidden>
               <div className="tech-box">
                 <img src={gtech} className="gtech" alt="gtech"/>
               </div>
