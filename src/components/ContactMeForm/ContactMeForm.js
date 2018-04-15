@@ -32,9 +32,19 @@ class ContactMeForm extends Component {
     }))
   }
 
-  handleSubmit = (event) => {
+  handleSubmit = async (event) => {
     event.preventDefault()
     console.log(this.state.formData)
+    // await fetch('https://portfolio-apoorva.herokuapp.com/sendmail', {
+    await fetch('https://portfolio-apoorva.herokuapp.com/sendmail', {
+      
+      method: 'post',
+      headers: {
+        'Accept': 'application/json, text/plain, */*',
+        'Content-Type': 'application/json'
+      },
+        body: JSON.stringify(this.state.formData)
+      })
   }
 
 
