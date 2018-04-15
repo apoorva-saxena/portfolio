@@ -62,6 +62,11 @@ class ContactMe extends Component {
               -webkit-transition: 0.3s ease-in-out;
               transition: 0.3s ease-in-out;
             }
+            
+            .gtech {
+              height: 300px;
+            }
+            
             .image-hover figure:hover img {
               -webkit-transform: rotate(15deg) scale(1);
               transform: rotate(10deg) scale(1);

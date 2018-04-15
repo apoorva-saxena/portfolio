@@ -73,7 +73,7 @@ class ContactMeForm extends Component {
             }
 
             .pseudo-table { 
-              padding: 24px 32px;
+              padding: 20px 32px;
             }
 
             label { 
