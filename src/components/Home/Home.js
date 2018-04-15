@@ -180,7 +180,7 @@ class Home extends Component {
 
             .work-container {
               border-bottom: 2px solid black;
-              padding: 135px 0 16px;
+              padding: 115px 0 16px;
               background-color: ${colors.bgPrimary};
 
             }
