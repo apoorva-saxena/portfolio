@@ -104,15 +104,15 @@ class Home extends Component {
             }
 
             .books-img {
-              width: 140px;
+              width: 100px;
             }
 
             .stuff-img {
-              height: 234px;
+              height: 159px;
             }
 
             .stuff-container {
-              padding: 30px 14px 11px;
+              padding: 54px 14px 11px;
               border-bottom: 2px black solid;
               border-left: 2px black solid;
               border-right: 2px black solid;
@@ -124,7 +124,7 @@ class Home extends Component {
               border-top: 2px black solid;
               border-right: 2px black solid;
               border-left: 2px black solid;
-              padding: 267px 20px 16px;
+              padding: 243px 20px 16px;
               background-color: ${colors.bgPrimary};
 
             }
@@ -133,30 +133,30 @@ class Home extends Component {
               border-bottom: 2px black solid;
               border-left: 2px black solid;
               border-right: 2px black solid;
-              padding: 13px 48px 11px;
+              padding: 34px 48px 11px;
               background-color: ${colors.bgPrimary};
 
             }
 
             .cv {
-              width: 200px;
+              width: 135px;
             }
 
             .linkedin {
-              width: 240px;
+              width: 179px;
             }
 
             .github {
-              width: 200px;
+              width: 119px;
             }
 
             .work {
-              width: 220px;
+              width: 143px;
             }
 
             .cv-container {
               border-top: 2px solid black;
-              padding: 122px 0 16px;
+              padding: 145px 0 16px;
               background-color: ${colors.bgPrimary};
 
             }

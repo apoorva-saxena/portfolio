@@ -55,7 +55,7 @@ class Header extends Component {
           {
             ` 
             .App-logo {
-              height: 80px;
+              height: 70px;
             }
 
             .App-header {
@@ -80,7 +80,7 @@ class Header extends Component {
 
             .intro {
               font-size: 1.5em;
-              padding-top: 28px;
+              padding-top: 20px;
             }
 
             .heart {
