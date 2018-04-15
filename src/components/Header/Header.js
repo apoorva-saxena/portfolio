@@ -36,6 +36,7 @@ class Header extends Component {
     return (
       <div className="App">
         <header className="App-header">
+        <div className="header-container">
           <div><img src={logo} className="App-logo" alt="logo"/></div> 
           <div className="intro">Hi, I am Apoorva</div>
           <div>I am a full stack developer in node js, express, react and angular. I love reading books and have interest in robotics.</div>
@@ -48,6 +49,7 @@ class Header extends Component {
             <span>{' '}{count}{'  '}</span>
             <img src={smiley}className="smiley" alt="smiley"/>
           </div>
+        </div>
         </header>
         <style jsx>
           {
@@ -60,6 +62,10 @@ class Header extends Component {
               height: 150px;
               padding: 20px;
               color: black;
+            }
+
+            .header-container {
+              padding-bottom: 30px;
             }
 
             .App-title {
@@ -87,6 +93,7 @@ class Header extends Component {
 
             .secondary-text{
               opacity: 0.5;
+              
             }
 
             .heart-container {
@@ -97,6 +104,13 @@ class Header extends Component {
               float: right;
               margin-top: -20px;
               padding-right: 20px;
+            }
+
+            @media only screen and (max-width: 600px) {
+              .count {
+                margin-top: -40px;
+                margin-right: 119px
+              }
             }
 
             .smiley {
