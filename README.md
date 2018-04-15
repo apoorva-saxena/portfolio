@@ -16,7 +16,9 @@ $ yarn start
 
 ```
 
-<img width="1670" alt="screen shot 2018-04-08 at 23 33 38" src="https://user-images.githubusercontent.com/13749603/38473285-5ae96d58-3b85-11e8-835c-58ec9907ed23.png">
+<img width="1680" alt="screen shot 2018-04-15 at 10 54 08" src="https://user-images.githubusercontent.com/13749603/38777167-77c48da2-409b-11e8-83b8-9a2ec170b0ce.png">
+
+<img width="1679" alt="screen shot 2018-04-15 at 10 54 29" src="https://user-images.githubusercontent.com/13749603/38777168-790907b0-409b-11e8-9172-82d3d7d2e280.png">
 
 
 
