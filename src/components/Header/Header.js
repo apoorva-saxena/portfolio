@@ -19,8 +19,16 @@ class Header extends Component {
     })
   }
 
-  handleClick = () => {
-    this.setState({ count: this.state.count + 1 })
+  handleClick = async () => {
+    this.setState({count: this.state.count + 1})
+    await fetch('https://portfolio-apoorva.herokuapp.com/count', {
+      method: 'post',
+      headers: {
+        'Accept': 'application/json, text/plain, */*',
+        'Content-Type': 'application/json'
+      },
+        body: this.state.count
+      })
   }
 
   render() {
