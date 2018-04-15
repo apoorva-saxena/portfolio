@@ -47,8 +47,8 @@ class ContactMe extends Component {
               </div>
             </Col>
             <Col md={6} xsHidden smHidden>
-              <div className="tech-box">
-                <img src={gtech} className="gtech" alt="gtech"/>
+              <div className="tech-box image-hover">
+                <figure><img src={gtech} className="gtech" alt="gtech"/></figure>
               </div>
             </Col>
           </Row>
@@ -56,6 +56,17 @@ class ContactMe extends Component {
         <style jsx>
           {
             `
+            .image-hover figure img {
+              -webkit-transform: rotate(0) scale(1);
+              transform: rotate(0) scale(1);
+              -webkit-transition: 0.3s ease-in-out;
+              transition: 0.3s ease-in-out;
+            }
+            .image-hover figure:hover img {
+              -webkit-transform: rotate(15deg) scale(1);
+              transform: rotate(10deg) scale(1);
+              z-index: -1;
+            }
             .tech-box {
               position: relative;
               padding: 200px 72px;
