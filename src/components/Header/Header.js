@@ -2,25 +2,44 @@ import React, {Component} from 'react'
 import logo from '../../images/logo.png'
 import heart from '../../images/heart.png'
 import smiley from '../../images/smiley.png'
-import { getCount } from '../../lib/count';
 
 class Header extends Component {
   state = {
-    count: getCount()
+    count: 0
+  }
+
+  componentDidMount () {
+    fetch('https://portfolio-apoorva.herokuapp.com/count')
+    .then(res => {
+      return res.json()
+    }).then(count => {
+      this.setState({count: count[0].count})
+    }).catch(err => {
+      console.log(err)
+    })
+  }
+
+  handleClick = () => {
+    this.setState({ count: this.state.count + 1 })
   }
 
   render() {
-    // updateCount()
-    const {onSignInPage} = this.props
     const {count} = this.state
     return (
       <div className="App">
         <header className="App-header">
           <div><img src={logo} className="App-logo" alt="logo"/></div> 
-          {/* <div className="count"><span className="secondary-text">People who like this site:</span>{' '}{count}{' '}<img src={smiley}className="smiley" alt="smiley"/></div> */}
           <div className="intro">Hi, I am Apoorva</div>
           <div>I am a full stack developer in node js, express, react and angular. I love reading books and have interest in robotics.</div>
-          {/* <div className="heart-container"> <span className="secondary-text">Like the site? Click the heart : </span><img src={heart} className="heart" alt="heart"/></div> */}
+          <div className="heart-container"> 
+            <span className="secondary-text">Like the site? Click the heart : </span>
+            <img src={heart} className="heart" alt="heart" onClick={this.handleClick}/>
+          </div>
+          <div className="count">
+            <span className="secondary-text">People who like this site:</span>
+            <span>{' '}{count}{'  '}</span>
+            <img src={smiley}className="smiley" alt="smiley"/>
+          </div>
         </header>
         <style jsx>
           {
@@ -41,7 +60,8 @@ class Header extends Component {
 
             .App {
               text-align: center;
-              padding-bottom: 70px;
+              padding-bottom: 100px;
+              height: 256px;
             }
 
             .intro {
@@ -67,7 +87,7 @@ class Header extends Component {
             
             .count {
               float: right;
-              margin-top: -72px;
+              margin-top: -20px;
               padding-right: 20px;
             }
 
