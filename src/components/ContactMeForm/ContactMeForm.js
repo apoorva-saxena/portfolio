@@ -77,7 +77,7 @@ class ContactMeForm extends Component {
             label { 
               color: black;
               left: 48px; 
-              font-size: 20px;
+              font-size: 18px;
             }
 
             input { 
@@ -85,7 +85,7 @@ class ContactMeForm extends Component {
               border-bottom : 2px solid black;
               width: 100%;
               color: ${colors.bglogo}; 
-              font-size: 20px;
+              font-size: 18px;
               -webkit-border-radius: 0;
               border-radius: 0;
             }
@@ -105,7 +105,7 @@ class ContactMeForm extends Component {
               width: 100%;
               border: 2px solid black;
               font-size: bold;
-              font-size:20px;
+              font-size:18px;
             }
 
             button {

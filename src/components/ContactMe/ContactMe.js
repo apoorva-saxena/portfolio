@@ -96,7 +96,7 @@ class ContactMe extends Component {
             }
 
             .work-img {
-              height: 60px;
+              height: 48px;
             }
 
             .form-elements-container {
