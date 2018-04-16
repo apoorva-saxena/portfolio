@@ -2,6 +2,7 @@ import React, {Component} from 'react'
 import logo from '../../images/logo.png'
 import heart from '../../images/heart.png'
 import smiley from '../../images/smiley.png'
+import map from '../../images/map.png'
 
 class Header extends Component {
   state = {
@@ -48,6 +49,10 @@ class Header extends Component {
             <span className="secondary-text">People who like this site:</span>
             <span>{' '}{count}{'  '}</span>
             <img src={smiley}className="smiley" alt="smiley"/>
+          </div>
+          <div className="map">
+            <span className="secondary-text">Who visited? :{' '}</span>
+            <img src={map}className="map-img" alt="map"/>
           </div>
         </div>
         </header>
@@ -114,11 +119,33 @@ class Header extends Component {
               }
             }
 
+            .map {
+              float: left;
+              margin-top: -195px;
+              padding-right: 16px;
+            }
+
+            @media only screen and (max-width: 700px) {
+              .map {
+                padding-top: 20px;
+                float: none;
+                margin-top: -20px
+              }
+            }
+
             .smiley {
               width: 18px;
             }
 
             .smiley:hover {
+              opacity: 0.6;
+            }
+
+            .map-img {
+              width: 28px;
+            }
+
+            .map-img:hover {
               opacity: 0.6;
             }
             `
