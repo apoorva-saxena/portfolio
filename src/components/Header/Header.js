@@ -50,10 +50,10 @@ class Header extends Component {
             <span>{' '}{count}{'  '}</span>
             <img src={smiley}className="smiley" alt="smiley"/>
           </div>
-          <div className="map">
+          {/* <div className="map">
             <span className="secondary-text">Who visited? :{' '}</span>
-            <img src={map}className="map-img" alt="map"/>
-          </div>
+            <img src={map} className="map-img" alt="map"/>
+          </div> */}
         </div>
         </header>
         <style jsx>
@@ -90,6 +90,7 @@ class Header extends Component {
 
             .heart {
               width: 22px;
+              cursor: pointer;
             }
 
             .heart:hover {
@@ -122,7 +123,7 @@ class Header extends Component {
             .map {
               float: left;
               margin-top: -195px;
-              padding-right: 16px;
+              padding-left: 16px;
             }
 
             @media only screen and (max-width: 700px) {
@@ -143,6 +144,7 @@ class Header extends Component {
 
             .map-img {
               width: 28px;
+              cursor: pointer;
             }
 
             .map-img:hover {

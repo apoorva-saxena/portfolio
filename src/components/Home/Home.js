@@ -10,11 +10,12 @@ import linkedin from '../../images/linkedin.png'
 import work from '../../images/work.png'
 import CV from '../../images/CV.png'
 import { colors } from '../../lib/variables'
+import footer from '../../images/footer.png'
 
 class Home extends Component {
   render() {
     return (
-      <div>
+      <div className="home-container">
         <Header/>
         <div>
           <Grid className="grid">
@@ -68,10 +69,24 @@ class Home extends Component {
             </Row>
           </Grid>
         </div>
-
+        <div className="footer">
+          {/* <figure><img src={footer} className="footer-img" alt="footer"/></figure> */}
+        </div>
         <style jsx>
           {
-            ` .image-hover figure img {
+            `
+            .footer {
+              {/* padding-top: 100px; */}
+              height: 110px;
+              background-color: ${colors.bglogo};
+              padding-right: 36px;
+            }
+            .footer-img {
+              float: right;
+              height: 110px;
+              padding-top: 45px;
+            }
+            .image-hover figure img {
               -webkit-transform: rotate(0) scale(1);
               transform: rotate(0) scale(1);
               -webkit-transition: 0.3s ease-in-out;
