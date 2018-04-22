@@ -50,6 +50,7 @@ class Header extends Component {
             <span>{' '}{count}{'  '}</span>
             <img src={smiley}className="smiley" alt="smiley"/>
           </div>
+          {/* this will be put back later */}
           {/* <div className="map">
             <span className="secondary-text">Who visited? :{' '}</span>
             <img src={map} className="map-img" alt="map"/>
