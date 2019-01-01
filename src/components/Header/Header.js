@@ -41,7 +41,7 @@ class Header extends Component {
           <div><img src={logo} className="App-logo" alt="logo"/></div> 
           <div className="intro">Hi, I am Apoorva</div>
           <div>I am a full stack developer in node js, express, react and angular. I love reading books and have interest in robotics.</div>
-          <div className="heart-container"> 
+          {/* <div className="heart-container"> 
             <span className="secondary-text">Like the site? Click the heart : </span>
             <img src={heart} className="heart" alt="heart" onClick={this.handleClick}/>
           </div>
@@ -49,7 +49,7 @@ class Header extends Component {
             <span className="secondary-text">People who like this site:</span>
             <span>{' '}{count}{'  '}</span>
             <img src={smiley}className="smiley" alt="smiley"/>
-          </div>
+          </div> */}
           {/* this will be put back later */}
           {/* <div className="map">
             <span className="secondary-text">Who visited? :{' '}</span>
