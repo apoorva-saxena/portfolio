@@ -5,35 +5,35 @@ import smiley from '../../images/smiley.png'
 import map from '../../images/map.png'
 
 class Header extends Component {
-  state = {
-    count: 0
-  }
+  // state = {
+  //   count: 0
+  // }
 
-  componentDidMount () {
-    fetch('https://portfolio-apoorva.herokuapp.com/count')
-    .then(res => {
-      return res.json()
-    }).then(count => {
-      this.setState({count: count[0].count})
-    }).catch(err => {
-      console.log(err)
-    })
-  }
+  // componentDidMount () {
+  //   fetch('https://portfolio-apoorva.herokuapp.com/count')
+  //   .then(res => {
+  //     return res.json()
+  //   }).then(count => {
+  //     this.setState({count: count[0].count})
+  //   }).catch(err => {
+  //     console.log(err)
+  //   })
+  // }
 
-  handleClick = async () => {
-    this.setState({count: this.state.count + 1})
-    await fetch('https://portfolio-apoorva.herokuapp.com/count', {
-      method: 'post',
-      headers: {
-        'Accept': 'application/json, text/plain, */*',
-        'Content-Type': 'application/json'
-      },
-        body: this.state.count
-      })
-  }
+  // handleClick = async () => {
+  //   this.setState({count: this.state.count + 1})
+  //   await fetch('https://portfolio-apoorva.herokuapp.com/count', {
+  //     method: 'post',
+  //     headers: {
+  //       'Accept': 'application/json, text/plain, */*',
+  //       'Content-Type': 'application/json'
+  //     },
+  //       body: this.state.count
+  //     })
+  // }
 
   render() {
-    const {count} = this.state
+    // const {count} = this.state
     return (
       <div className="App">
         <header className="App-header">
