@@ -72,7 +72,7 @@ class Home extends Component {
         <div className="footer">
           {/* <figure><img src={footer} className="footer-img" alt="footer"/></figure> */}
         </div>
-        <style jsx>
+        <style jsx="true">
           {
             `
             .footer {

@@ -57,7 +57,7 @@ class Header extends Component {
           </div> */}
         </div>
         </header>
-        <style jsx>
+        <style jsx="true">
           {
             ` 
             .App-logo {
